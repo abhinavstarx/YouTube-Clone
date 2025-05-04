@@ -3,8 +3,21 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Google font link to be inserted for Roboto text-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+
     <title>Youtube-Clone</title>
+
     <style>
+      body {
+        font-family: "Roboto", Arial;
+      }
+      /* temp text set to Arial(it should be the backup text) */
       p {
         margin: 0;
       }
@@ -23,6 +36,10 @@
         vertical-align: top;
         margin-right: 15px;
         vertical-align: top;
+      }
+
+      .thumbnail-row {
+        margin-bottom: 12px;
       }
 
       .channel-picture {
@@ -44,7 +61,7 @@
     <input class="search-bar" type="text" placeholder="Search" />
 
     <div class="video-preview">
-      <div>
+      <div class="thumbnail-row">
         <img class="thumbnail" src="Thumbnails/thumbnail-1.webp" />
       </div>
       <div>
